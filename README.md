@@ -1,7 +1,7 @@
 # Bienvenido
 
 
-[![pipeline status](/badges/master/pipeline.svg)](https://gitlab.com/is-untref/proyecto-base/commits/master)
+[![pipeline status](https://gitlab.com/fiuba-memo2/modelo-de-repositorio/badges/master/pipeline.svg)](https://gitlab.com/fiuba-memo2/modelo-de-repositorio/commits/master)
 
 ## Instrucciones iniciales
 Este el es repositorio que utilizaras durante la materia para realizar tus tareas.
