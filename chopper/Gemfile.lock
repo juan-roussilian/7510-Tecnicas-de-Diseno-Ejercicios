@@ -81,9 +81,3 @@ DEPENDENCIES
   rspec
   rubocop
   rubocop-rspec
-
-RUBY VERSION
-   ruby 2.2.0p0
-
-BUNDLED WITH
-   1.16.2
