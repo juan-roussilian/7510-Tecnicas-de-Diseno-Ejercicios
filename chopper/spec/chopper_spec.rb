@@ -53,5 +53,4 @@ describe 'Chopper' do
     expect(chopper.sum([20, 1, 1, 1])).to eq 'dos,tres'
   end
 =end # rubocop:enable all
-
 end
