@@ -1,5 +1,4 @@
 require 'spec_helper'
-require_relative '../model/chopper'
 
 describe 'Chopper' do
   let(:chopper) { Chopper.new }

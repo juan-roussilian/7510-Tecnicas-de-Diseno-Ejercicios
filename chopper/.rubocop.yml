@@ -1,6 +1,8 @@
-require: rubocop-rspec
-
 # Avoid methods longer than 30 lines of code
+AllCops:
+  NewCops: disable
+  Exclude:
+    - spec/*.rb
 MethodLength:
   Max: 30
 Metrics/BlockLength:
@@ -14,24 +16,8 @@ Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 Style/Documentation:
   Exclude: ['**/*']
-RSpec/AnyInstance:
-  Enabled: false
-RSpec/ExampleWording:
-  Enabled: false
-RSpec/DescribeClass:
-  Enabled: false
-RSpec/HookArgument:
-  EnforcedStyle: each
-RSpec/MessageSpies:
-  EnforcedStyle: receive
-RSpec/MultipleExpectations:
-  Max: 3
 EndOfLine:
   Enabled: false
-RSpec/NestedGroups:
-  Max: 6
-RSpec/ExampleLength:
-  Max: 19
 Style/HashSyntax:
   EnforcedStyle: no_mixed_keys
 Layout/SpaceInsideHashLiteralBraces:

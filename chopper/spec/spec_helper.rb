@@ -13,6 +13,7 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+Dir[File.join(__dir__, '..', 'model', '*.rb')].each { |file| require file }
 require 'simplecov'
 SimpleCov.minimum_coverage 75
 SimpleCov.start
