@@ -15,7 +15,9 @@
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'simplecov'
 SimpleCov.minimum_coverage 75
-SimpleCov.start
+SimpleCov.start do
+  add_filter "/spec/"
+end
 Dir[File.join(__dir__, '..', 'model', '*.rb')].each { |file| require file }
 
 RSpec.configure do |config|
