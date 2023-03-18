@@ -31,6 +31,6 @@ class Chopper
       word_array.push(numbers_to_name[number_c])
     end
 
-    word_array.compact.join(', ')
+    word_array.compact.join(',')
   end
 end
