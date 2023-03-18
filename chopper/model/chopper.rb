@@ -3,7 +3,7 @@ class Chopper
     if array.empty?
       -1
     else
-      0
+      array.index(position)
     end
   end
 end
