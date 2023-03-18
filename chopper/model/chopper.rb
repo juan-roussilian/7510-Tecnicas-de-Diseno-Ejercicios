@@ -5,6 +5,7 @@ class Chopper
   end
 
   def sum(array)
-    'vacio' if array.empty?
+    return 'uno' unless array.empty?
+    return 'vacio' if array.empty?
   end
 end
