@@ -6,6 +6,7 @@ class Chopper
 
   def sum(array)
     return 'vacio' if array.empty?
+    return 'demasiado grande' if array.sum > 99
 
     parse_to_spanish_words(array.sum)
   end
