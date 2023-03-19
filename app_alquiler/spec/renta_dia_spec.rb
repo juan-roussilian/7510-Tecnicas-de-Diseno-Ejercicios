@@ -1,22 +1,23 @@
 require 'spec_helper'
 
 describe 'RentaDia' do
-=begin
-  it 'renta sin recargo por 1 dia calcula bien el importe' do
+
+  it 'renta sin recargo por 1 dia debe dar importe de 2001' do
     renta = RentaDia.new(1)
-    importe = renta.calcular_importe('20231903','20232003')
+    importe = renta.calcular_importe('20230319','20230320')
     expect(importe).to eq 2001
 
   end
   it 'renta sin recargo por 20 dias calcula bien el importe' do
     renta = RentaDia.new(20)
-    importe = renta.calcular_importe('20230903','20232903')
+    importe = renta.calcular_importe('20230309','20230329')
     expect(importe).to eq 40020
   end
+
   it 'renta con recargo por 3 dias calcula bien el importe' do
     renta = RentaDia.new(3)
-    importe = renta.calcular_importe('20231903','20232504')
+    importe = renta.calcular_importe('20230319','20230425')
     expect(importe).to eq 12006
   end
-=end
+
 end
