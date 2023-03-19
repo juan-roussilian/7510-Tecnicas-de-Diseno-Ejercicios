@@ -1,11 +1,8 @@
 require 'spec_helper'
 
 describe 'CuitParticular' do
-=begin
-  it 'aplicar descuento en cuit particular no descuenta' do
-    importe_inicial = 500
-    importe_descontado = CuitParticular.new.aplicar_descuento(importe_inicial)
-    expect(importe_inicial).to eq importe_descontado
+  it 'descontar con cuit particular sobre 500 da 500' do
+    importe_descontado = CuitParticular.new.aplicar_descuento(500)
+    expect(importe_descontado).to eq 500
   end
-=end
 end
