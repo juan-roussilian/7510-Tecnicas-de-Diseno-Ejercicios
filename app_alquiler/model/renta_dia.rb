@@ -1,0 +1,2 @@
+class RentaDia
+end

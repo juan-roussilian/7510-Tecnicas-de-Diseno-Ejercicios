@@ -1,0 +1,2 @@
+class CuitParticular
+end

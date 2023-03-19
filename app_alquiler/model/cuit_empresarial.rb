@@ -1,0 +1,2 @@
+class CuitEmpresarial
+end
