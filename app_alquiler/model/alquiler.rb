@@ -1,3 +1,9 @@
+require_relative './cuit_particular'
+require_relative './cuit_empresarial'
+require_relative './renta_dia'
+require_relative './renta_hora'
+require_relative './renta_km'
+require 'date'
 class Alquiler
   def initialize(fecha_inicio, fecha_entrega, cuit, tipo_alquiler, parametro_alquiler)
     @fecha_inicio = fecha_inicio
