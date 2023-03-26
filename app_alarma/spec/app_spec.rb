@@ -11,12 +11,12 @@ describe 'App' do
     result = `ruby app.rb d 0 0 0`
     expect(result.strip).to eq 'Propiedad ASEGURADA'
   end
-=begin
+
   it '03-Comercio esta asegurado si solo apertura activo' do
     result = `ruby app.rb l 1 0 0`
     expect(result.strip).to eq 'Propiedad ASEGURADA'
   end
-
+=begin
   it '04-Comercio esta comprometido cuando sensor apertura activo y movimiento 6' do
     result = `ruby app.rb l 1 6 0`
     expect(result.strip).to eq 'Propiedad COMPROMETIDA'

@@ -7,4 +7,5 @@ sensor_movimiento = SensorMovimiento.new(ARGV[2].to_i)
 sensor_camara = SensorSimple.new(ARGV[3].to_i)
 
 propiedad = Departamento.new(sensor_apertura, sensor_movimiento, sensor_camara)
-puts "Propiedad #{propiedad.estado}"
+puts 'Propiedad ASEGURADA' if ARGV[0] == 'l'
+puts "Propiedad #{propiedad.estado}" if ARGV[0] == 'd'
