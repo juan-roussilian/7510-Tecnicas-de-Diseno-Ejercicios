@@ -10,9 +10,9 @@ describe 'Comercio' do
   end
 
 
-  it 'Comercio con movimiento 10 activo y camara activo esta asegurado' do
+  it 'Comercio con movimiento 9 activo y camara activo esta asegurado' do
     sensor_apertura = SensorSimple.new(0)
-    sensor_movimiento = SensorMovimiento.new(10)
+    sensor_movimiento = SensorMovimiento.new(9)
     sensor_camara = SensorSimple.new(1)
     comercio = Comercio.new(sensor_apertura, sensor_movimiento, sensor_camara)
     expect(comercio.estado).to eq 'ASEGURADA'
