@@ -4,6 +4,6 @@ class SensorMovimiento
   end
 
   def activo
-    false
+    @valor_numerico >= 5
   end
 end
