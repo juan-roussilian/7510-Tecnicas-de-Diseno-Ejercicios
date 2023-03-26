@@ -6,6 +6,10 @@ class Departamento
   end
 
   def estado
-    'COMPROMETIDA'
+    if @sensor_puerta.activo || @sensor_movimiento.activo || @sensor_camara.activo
+      return 'COMPROMETIDA'
+    end
+
+    'ASEGURADA'
   end
 end
