@@ -1,1 +1,1 @@
-puts 'Propiedad ASEGURADA'
+puts 'Propiedad COMPROMETIDA'
