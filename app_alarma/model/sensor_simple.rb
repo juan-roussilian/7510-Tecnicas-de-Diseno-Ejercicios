@@ -1,4 +1,4 @@
-class SensorPuerta
+class SensorSimple
   def initialize(valor)
     @valor_numerico = valor
   end
