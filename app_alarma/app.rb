@@ -3,10 +3,17 @@ require_relative './model/sensor_movimiento'
 require_relative './model/departamento'
 require_relative './model/comercio'
 require_relative './model/campo'
+require_relative './exceptions/sensor_descompuesto'
 
 CARACTER_DEPARTAMENTO = 'd'.freeze
 CARACTER_COMERCIO = 'l'.freeze
-sensor_apertura = SensorSimple.new(ARGV[1].to_i)
+
+begin
+  sensor_apertura = SensorSimple.new(ARGV[1].to_i)
+rescue SensorDescompuesto
+  puts 'SENSOR DESCOMPUESTO'
+  return
+end
 sensor_movimiento = SensorMovimiento.new(ARGV[2].to_i)
 sensor_camara = SensorSimple.new(ARGV[3].to_i)
 

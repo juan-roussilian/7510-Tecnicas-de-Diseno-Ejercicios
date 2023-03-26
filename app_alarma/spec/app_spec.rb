@@ -36,11 +36,11 @@ describe 'App' do
     result = `ruby app.rb d 1 7 1`
     expect(result.strip).to eq 'Propiedad COMPROMETIDA'
   end
-=begin
+
   it '08-Sensor descompuesto' do
     result = `ruby app.rb d 33 1 1`
     expect(result.strip).to eq 'SENSOR DESCOMPUESTO'
   end
-=end
+
 end
 
