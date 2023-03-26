@@ -2,19 +2,10 @@ require 'spec_helper'
 
 describe 'App' do
 
-  it 'sin entrada muestra error' do
-    resultado = `ruby app.rb`
-    expect(resultado.strip).to eq 'error: entrada requerida'
+  it 'departamento con 0 sensores activos esta asegurado' do
+    resultado = `ruby app.rb d 0 0 0`
+    expect(resultado.strip).to eq 'Propiedad ASEGURADA'
   end
 
-  it 'inverso de MiCasaLinda es mIcASAlINDA' do
-    resultado = `ruby app.rb MiCasaLinda`
-    expect(resultado.strip).to eq 'mIcASAlINDA'
-  end
-
-  it 'inverso con numeros es igual' do
-    resultado = `ruby app.rb 1111`
-    expect(resultado.strip).to eq '1111'
-  end
 
 end
