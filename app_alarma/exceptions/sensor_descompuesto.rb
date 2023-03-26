@@ -1,0 +1,2 @@
+class SensorDescompuesto < StandardError
+end
