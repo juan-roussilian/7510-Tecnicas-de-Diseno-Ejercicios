@@ -1,4 +1,6 @@
 class Departamento
+  MENSAJE_ESTADO_ASEGURADO = 'ASEGURADA'.freeze
+  MENSAJE_ESTADO_COMPROMETIDO = 'COMPROMETIDA'.freeze
   def initialize(sensor_puerta, sensor_movimiento, sensor_camara)
     @sensor_puerta = sensor_puerta
     @sensor_movimiento = sensor_movimiento
@@ -7,9 +9,9 @@ class Departamento
 
   def estado
     if @sensor_puerta.activo || @sensor_movimiento.activo || @sensor_camara.activo
-      return 'COMPROMETIDA'
+      return MENSAJE_ESTADO_COMPROMETIDO
     end
 
-    'ASEGURADA'
+    MENSAJE_ESTADO_ASEGURADO
   end
 end
