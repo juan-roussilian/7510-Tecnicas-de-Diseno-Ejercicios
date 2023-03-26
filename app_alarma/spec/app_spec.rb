@@ -26,7 +26,7 @@ describe 'App' do
     result = `ruby app.rb l 1 2 0`
     expect(result.strip).to eq 'Propiedad ASEGURADA'
   end
-=begin
+
   it '06-Campo esta comprometido cuando sensores movimiento y camara activos' do
     result = `ruby app.rb c 0 8 1`
     expect(result.strip).to eq 'Propiedad COMPROMETIDA'
@@ -36,7 +36,7 @@ describe 'App' do
     result = `ruby app.rb d 1 7 1`
     expect(result.strip).to eq 'Propiedad COMPROMETIDA'
   end
-
+=begin
   it '08-Sensor descompuesto' do
     result = `ruby app.rb d 33 1 1`
     expect(result.strip).to eq 'SENSOR DESCOMPUESTO'
