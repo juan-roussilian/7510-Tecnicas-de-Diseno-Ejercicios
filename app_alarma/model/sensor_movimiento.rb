@@ -8,6 +8,7 @@ class SensorMovimiento
     if valor_numerico < VALOR_MINIMO_SENSOR || valor_numerico > VALOR_MAXIMO_SENSOR
       raise SensorDescompuesto
     end
+
     @valor_numerico = valor_numerico
   end
 
