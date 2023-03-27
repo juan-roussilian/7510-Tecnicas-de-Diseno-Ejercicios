@@ -10,12 +10,12 @@ CARACTER_COMERCIO = 'l'.freeze
 
 begin
   sensor_apertura = SensorSimple.new(ARGV[1].to_i)
+  sensor_movimiento = SensorMovimiento.new(ARGV[2].to_i)
+  sensor_camara = SensorSimple.new(ARGV[3].to_i)
 rescue SensorDescompuesto
   puts 'SENSOR DESCOMPUESTO'
   return
 end
-sensor_movimiento = SensorMovimiento.new(ARGV[2].to_i)
-sensor_camara = SensorSimple.new(ARGV[3].to_i)
 
 propiedad = case ARGV[0]
             when CARACTER_DEPARTAMENTO
