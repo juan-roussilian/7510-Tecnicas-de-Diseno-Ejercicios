@@ -10,5 +10,8 @@ describe 'SensorMovimiento' do
     sensor = SensorMovimiento.new(5)
     expect(sensor.activo).to eq true
   end
+  it '03-Sensor movimiento con valor fuera del rango 0 a 9 esta descompuesto' do
+    expect { SensorMovimiento.new(11) }.to raise_error(SensorDescompuesto)
+  end
 
 end
