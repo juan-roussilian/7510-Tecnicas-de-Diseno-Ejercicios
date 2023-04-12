@@ -4,7 +4,6 @@ Característica: Propiedad gubernamental
 
   Regla: esta comprometida cuando sensores movimiento y apertura estan actividos
 
-  @wip
   Escenario: solo sensor camara esta activado
     Dado que sensor camara esta activado
     Cuando consulto estado de la propiedad
