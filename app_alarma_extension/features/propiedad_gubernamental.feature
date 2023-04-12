@@ -19,7 +19,6 @@ Característica: Propiedad gubernamental
     Cuando consulto estado de la propiedad
     Entonces esta asegurada
 
-  @wip
   Escenario: sensor movimiento y apertura estan activados
     Dado que sensor movimiento esta activado
     Y que sensor apertura esta activado
