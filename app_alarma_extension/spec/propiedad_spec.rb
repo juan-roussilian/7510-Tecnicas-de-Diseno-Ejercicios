@@ -36,4 +36,10 @@ describe 'Propiedad' do
     resultado = Campo.new(SensorApertura.new(1), SensorMovimiento.new(3), SensorCamara.new(1)).determinar_seguridad
     expect(resultado).to eq 'COMPROMETIDA'
   end
+
+
+  it 'Edificio gubernamental con sensor de camara 0, sensor de movimiento 6 y sensor de cámara 0 es ASEGURADA' do
+    resultado = EdificioGubernamental.new(SensorApertura.new(0), SensorMovimiento.new(6), SensorCamara.new(0)).determinar_seguridad
+    expect(resultado).to eq 'ASEGURADA'
+  end
 end

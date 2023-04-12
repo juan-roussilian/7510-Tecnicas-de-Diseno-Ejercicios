@@ -44,3 +44,9 @@ class Campo < Propiedad
     end
   end
 end
+
+class EdificioGubernamental < Propiedad
+  def determinar_seguridad
+      ASEGURADA
+  end
+end
