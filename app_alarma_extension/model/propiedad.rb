@@ -47,6 +47,6 @@ end
 
 class EdificioGubernamental < Propiedad
   def determinar_seguridad
-      ASEGURADA
+    ASEGURADA
   end
 end
