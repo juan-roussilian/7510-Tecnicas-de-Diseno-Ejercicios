@@ -42,8 +42,14 @@ describe 'Propiedad' do
     resultado = EdificioGubernamental.new(SensorApertura.new(0), SensorMovimiento.new(6), SensorCamara.new(0)).determinar_seguridad
     expect(resultado).to eq 'ASEGURADA'
   end
+
   it 'Edificio gubernamental con sensor de camara 1, sensor de movimiento 4 y sensor de cámara 0 es ASEGURADA' do
     resultado = EdificioGubernamental.new(SensorApertura.new(0), SensorMovimiento.new(6), SensorCamara.new(0)).determinar_seguridad
+    expect(resultado).to eq 'ASEGURADA'
+  end
+
+  it 'Edificio gubernamental con sensor de camara 0, sensor de movimiento 0 y sensor de cámara 1 es ASEGURADA' do
+    resultado = EdificioGubernamental.new(SensorApertura.new(0), SensorMovimiento.new(0), SensorCamara.new(1)).determinar_seguridad
     expect(resultado).to eq 'ASEGURADA'
   end
 end
