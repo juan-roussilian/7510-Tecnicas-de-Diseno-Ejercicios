@@ -47,6 +47,10 @@ end
 
 class EdificioGubernamental < Propiedad
   def determinar_seguridad
-    ASEGURADA
+    if @sensor_movimiento.esta_activo? && @sensor_apertura.esta_activo?
+      COMPROMETIDA
+    else
+      ASEGURADA
+    end
   end
 end
