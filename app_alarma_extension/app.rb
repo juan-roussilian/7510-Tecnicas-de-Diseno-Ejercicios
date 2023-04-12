@@ -5,6 +5,7 @@ ARGUMENTOS_ESPERADOS = 4
 DEPARTAMENTO = 'd'.freeze
 COMERCIO = 'l'.freeze
 CAMPO = 'c'.freeze
+EDIFICIO_GUBERNAMENTAL = 'g'.freeze
 
 if ARGV.length != ARGUMENTOS_ESPERADOS
   puts 'ERROR: ARGUMENTOS INVÁLIDOS'
@@ -27,6 +28,8 @@ propiedad = case ARGV[0]
               Comercio.new(sensor_apertura, sensor_movimiento, sensor_camara)
             when CAMPO
               Campo.new(sensor_apertura, sensor_movimiento, sensor_camara)
+            when EDIFICIO_GUBERNAMENTAL
+              EdificioGubernamental.new(sensor_apertura, sensor_movimiento, sensor_camara)
             else
               puts 'ERROR: PROPIEDAD INVÁLIDA'
               exit 1
