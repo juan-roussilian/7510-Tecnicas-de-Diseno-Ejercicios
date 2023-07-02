@@ -1,10 +1,7 @@
-class Auto
+require_relative './vehiculo'
+
+class Auto < Vehiculo
   PRECIO_BASE_AUTO = 1000
-  DECIMALES_VALOR_MERCADO = 1
-  def initialize(cilindrada, kilometraje)
-    @cilindrada = cilindrada
-    @kilometraje = kilometraje
-  end
 
   def calcular_coeficiente_impositivo(impuesto)
     impuesto.coeficiente_impositivo(PRECIO_BASE_AUTO, @cilindrada)
