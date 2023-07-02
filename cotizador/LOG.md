@@ -1,1 +1,2 @@
 - Creo test de aceptacion para ejemplo del enunciado
+- Hardcodeo return de app.rb para que pase el primer test de aceptacion
