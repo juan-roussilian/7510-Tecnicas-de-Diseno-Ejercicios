@@ -11,4 +11,5 @@
 - Agrego test en auto que obliga a implementar los metodos de calculo impositivo y valor de mercado
 - Implemento los metodos de calculo impositivo y valor de mercado en auto
 - Implemento funcionalidad en app.rb para que pasen los tests y elimino respuesta hardcodeada
+- Agrego test de aceptacion de app para camioneta
 
