@@ -5,3 +5,4 @@
 - Creo clases impuesto y auto vacias para que pase el test de cotizador
 - Agrego logica en app para que pase el segundo test de aceptacion
 - Agrego tercer test de aceptacion para cotizacion de auto, de manera que deba implementar el cotizador sin hardcodeo
+- Agrego clase puerto/proveedor de parametros de consola
