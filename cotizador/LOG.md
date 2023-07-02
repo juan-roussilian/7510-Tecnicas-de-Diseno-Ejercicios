@@ -13,4 +13,5 @@
 - Implemento funcionalidad en app.rb para que pasen los tests y elimino respuesta hardcodeada
 - Agrego test de aceptacion de app para camioneta
 - Agrego camioneta con sus tests
+- Implemento funcionalidad en app.rb para que pase el test de camioneta
 
