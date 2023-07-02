@@ -1,0 +1,2 @@
+class Impuesto
+end
