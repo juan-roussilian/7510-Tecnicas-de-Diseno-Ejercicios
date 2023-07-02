@@ -26,5 +26,10 @@ describe 'App' do
     comando = `ruby app.rb camioneta/1000/50000`
     expect(comando.strip).to eq 'ci:1 & vm:29.4'
   end
-
+=begin
+  it 'camion con cilindrada 2000 y kilometraje 500000 cotiza  ci 4 y vm 29.4' do
+    comando = `ruby app.rb camion/2000/500000`
+    expect(comando.strip).to eq 'ci:4 & vm:7.9'
+  end
+=end
 end
