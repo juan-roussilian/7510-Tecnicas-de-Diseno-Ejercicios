@@ -12,13 +12,11 @@ end
 
 parametros = ProveedorParametrosConsola.obtener_parametros(entrada)
 
-if ARGV[0] == 'auto/2000/1000'
+if parametros[:tipo_vehiculo] == 'auto'
   impuesto = Impuesto.new
   auto = Auto.new(parametros[:cilindrada], parametros[:kilometraje])
   cotizador = Cotizador.new(impuesto)
   cotizacion = cotizador.cotizar(auto)
   puts "ci:#{cotizacion[:coeficiente_impositivo]} & vm:#{cotizacion[:valor_mercado]}"
-else
-  puts 'ci:1 & vm:500.0'
 end
 exit 1

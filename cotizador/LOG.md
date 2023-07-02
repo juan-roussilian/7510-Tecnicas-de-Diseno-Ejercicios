@@ -6,3 +6,9 @@
 - Agrego logica en app para que pase el segundo test de aceptacion
 - Agrego tercer test de aceptacion para cotizacion de auto, de manera que deba implementar el cotizador sin hardcodeo
 - Agrego clase puerto/proveedor de parametros de consola
+- Agrego tests e implementacion en impuesto para calcular coeficiente impositivo
+- Agrego test en cotizador que obliga a implementar calculo de coeficiente impostivio y valor de mercado en clase auto
+- Agrego test en auto que obliga a implementar los metodos de calculo impositivo y valor de mercado
+- Implemento los metodos de calculo impositivo y valor de mercado en auto
+- Implemento funcionalidad en app.rb para que pasen los tests y elimino respuesta hardcodeada
+
