@@ -18,5 +18,4 @@
 - Agrego test a cotizador para cotizar camiones y tener que implementar esa funcionalidad
 - Agrego test de aceptacion sobre camiones
 - Implemento camion
-
-
+- Agrego test unitario de camion 
