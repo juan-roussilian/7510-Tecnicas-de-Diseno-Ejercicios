@@ -19,3 +19,5 @@
 - Agrego test de aceptacion sobre camiones
 - Implemento camion
 - Agrego test unitario de camion 
+- Agrego test unitario de proveedor de salida para mensaje de cotizacion
+- Implemento proveedor de salida
