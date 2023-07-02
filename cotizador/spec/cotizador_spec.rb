@@ -7,6 +7,5 @@ describe 'Cotizador' do
         cotizacion = Cotizador.new(impuesto).cotizar(auto)
         expect(cotizacion[:coeficiente_impositivo]).to eq 2
         expect(cotizacion[:valor_mercado]).to eq 1000.0
-
     end
 end

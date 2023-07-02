@@ -1,3 +1,6 @@
 - Creo test de aceptacion para ejemplo del enunciado
 - Hardcodeo return de app.rb para que pase el primer test de aceptacion
 - Escribo siguiente test de aceptacion que obligara a implementar la funcionalidad del cotizador para el auto
+- Escribo clase cotizador con test unitario sobre metodo cotizacion
+- Creo clases impuesto y auto vacias para que pase el test de cotizador
+- Agrego logica en app para que pase el segundo test de aceptacion

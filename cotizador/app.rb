@@ -1,4 +1,8 @@
 require_relative './model/cotizador'
+require_relative './model/impuesto'
+require_relative './model/auto'
+
+require 'byebug'
 
 entrada = ARGV[0]
 
@@ -7,5 +11,13 @@ if entrada.nil?
   exit 1
 end
 
-puts 'ci:1 & vm:500.0'
+if ARGV[0] == 'auto/2000/1000'
+  impuesto = Impuesto.new
+  auto = Auto.new(2000, 1000)
+  cotizador = Cotizador.new(impuesto)
+  cotizacion = cotizador.cotizar(auto)
+  puts "ci:#{cotizacion[:coeficiente_impositivo]} & vm:#{cotizacion[:valor_mercado]}"
+else
+  puts 'ci:1 & vm:500.0'
+end
 exit 1
