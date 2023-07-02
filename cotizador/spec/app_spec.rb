@@ -11,5 +11,10 @@ describe 'App' do
     comando = `ruby app.rb auto/1000/1000`
     expect(comando.strip).to eq 'ci:1 & vm:500.0'
   end
-  
+=begin
+  it 'auto con cilindrada 2000 y kilometraje 1000 cotiza  ci 2  y vm 1000.0' do
+    comando = `ruby app.rb auto/2000/1000`
+    expect(comando.strip).to eq 'ci:2 & vm:1000.0'
+  end
+=end
 end

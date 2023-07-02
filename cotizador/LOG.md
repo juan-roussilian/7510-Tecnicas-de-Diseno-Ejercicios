@@ -1,2 +1,3 @@
 - Creo test de aceptacion para ejemplo del enunciado
 - Hardcodeo return de app.rb para que pase el primer test de aceptacion
+- Escribo siguiente test de aceptacion que obligara a implementar la funcionalidad del cotizador para el auto
