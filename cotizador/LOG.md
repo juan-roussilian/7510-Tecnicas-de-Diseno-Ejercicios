@@ -17,5 +17,6 @@
 - Agrego test a cotizador para hacer mas robusta la cotizacion sobre camioneta
 - Agrego test a cotizador para cotizar camiones y tener que implementar esa funcionalidad
 - Agrego test de aceptacion sobre camiones
+- Implemento camion
 
 
