@@ -21,3 +21,5 @@
 - Agrego test unitario de camion 
 - Agrego test unitario de proveedor de salida para mensaje de cotizacion
 - Implemento proveedor de salida
+- Agrego test de aceptacion por entrada incorrecta
+- Implemento funcionalidad de validacion de entrada en proveedor parametros consola

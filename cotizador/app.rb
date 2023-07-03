@@ -17,9 +17,12 @@ if entrada.nil?
   salida_consola.error_falta_entrada
   exit 1
 end
-
-parametros = ProveedorParametrosConsola.obtener_parametros(entrada)
-
+begin
+  parametros = ProveedorParametrosConsola.new.obtener_parametros(entrada)
+rescue StandardError
+  salida_consola.error_parametros_incorrectos
+  exit 1
+end
 case parametros[:tipo_vehiculo]
 when TIPO_VEHICULO_AUTO
   vehiculo = Auto.new(parametros[:cilindrada], parametros[:kilometraje])

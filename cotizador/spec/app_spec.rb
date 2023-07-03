@@ -32,4 +32,22 @@ describe 'App' do
     expect(comando.strip).to eq 'ci:4 & vm:7.9'
   end
   
+  it 'tipo de vehiculo invalido devuelve error' do
+    comando = `ruby app.rb vespa/2000/500000`
+    expect(comando.strip).to eq 'error: uno o mas de los parametros de entrada es invalido'
+  end
+
+  it 'cilindrada invalida devuelve error' do
+    comando = `ruby app.rb auto/3000/500000`
+    expect(comando.strip).to eq 'error: uno o mas de los parametros de entrada es invalido'
+  end
+
+  it 'kilometraje invalido devuelve error' do
+    comando = `ruby app.rb auto/2000/-1`
+    expect(comando.strip).to eq 'error: uno o mas de los parametros de entrada es invalido'
+  end
+  it 'kilometraje nulo devuelve error' do
+    comando = `ruby app.rb auto/2000/0`
+    expect(comando.strip).to eq 'error: uno o mas de los parametros de entrada es invalido'
+  end
 end
