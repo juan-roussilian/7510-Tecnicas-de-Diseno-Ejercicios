@@ -1,0 +1,25 @@
+- Creo test de aceptacion para ejemplo del enunciado
+- Hardcodeo return de app.rb para que pase el primer test de aceptacion
+- Escribo siguiente test de aceptacion que obligara a implementar la funcionalidad del cotizador para el auto
+- Escribo clase cotizador con test unitario sobre metodo cotizacion
+- Creo clases impuesto y auto vacias para que pase el test de cotizador
+- Agrego logica en app para que pase el segundo test de aceptacion
+- Agrego tercer test de aceptacion para cotizacion de auto, de manera que deba implementar el cotizador sin hardcodeo
+- Agrego clase puerto/proveedor de parametros de consola
+- Agrego tests e implementacion en impuesto para calcular coeficiente impositivo
+- Agrego test en cotizador que obliga a implementar calculo de coeficiente impostivio y valor de mercado en clase auto
+- Agrego test en auto que obliga a implementar los metodos de calculo impositivo y valor de mercado
+- Implemento los metodos de calculo impositivo y valor de mercado en auto
+- Implemento funcionalidad en app.rb para que pasen los tests y elimino respuesta hardcodeada
+- Agrego test de aceptacion de app para camioneta
+- Agrego camioneta con sus tests
+- Implemento funcionalidad en app.rb para que pase el test de camioneta
+- Agrego test a cotizador para hacer mas robusta la cotizacion sobre camioneta
+- Agrego test a cotizador para cotizar camiones y tener que implementar esa funcionalidad
+- Agrego test de aceptacion sobre camiones
+- Implemento camion
+- Agrego test unitario de camion 
+- Agrego test unitario de proveedor de salida para mensaje de cotizacion
+- Implemento proveedor de salida
+- Agrego test de aceptacion por entrada incorrecta
+- Implemento funcionalidad de validacion de entrada en proveedor parametros consola
